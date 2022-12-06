@@ -11,6 +11,7 @@
       shadow
       focus:outline-none
       focus:ring
+      focus:ring-blue-500 focus:border-blue-500
       mb-8
     "
   >

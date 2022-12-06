@@ -14,8 +14,9 @@ const routes = [
     },
     {
         name : 'search-vendor-page',
-        path : '/vendor',
-        component : () => import('@/pages/customer/SearchPage.vue')
+        path : '/vendor/:search',
+        component : () => import('@/pages/customer/SearchPage.vue'),
+        props:true
     },
 
 ]
