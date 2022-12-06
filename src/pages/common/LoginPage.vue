@@ -152,8 +152,8 @@ export default {
     
   },
   methods: {
-    // handleLogin() {
-    //   this.loading = true;
+    handleLogin() {
+      this.loading = true;
     //   this.$store.dispatch("auth/login", this.user).then(
     //     (response) => {
     //       if (response.Token) {
@@ -172,7 +172,7 @@ export default {
 
     //     // }
     //   );
-    // },
+    },
   },
 };
 </script>

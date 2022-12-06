@@ -5,7 +5,19 @@ const routes = [
         name : 'login-page',
         path : '/login',
         component : () => import('@/pages/common/LoginPage.vue')
-    }
+    },
+    /* customer */
+    {
+        name : 'home-page',
+        path : '/home',
+        component : () => import('@/pages/customer/HomePage.vue')
+    },
+    {
+        name : 'search-vendor-page',
+        path : '/vendor',
+        component : () => import('@/pages/customer/SearchPage.vue')
+    },
+
 ]
 
 const router = createRouter({
