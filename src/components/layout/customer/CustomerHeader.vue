@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid fixed z-10 w-full mx-auto h-[14.8%] mb-8 border-1 pl-1 md:mb-0 shadow">
+  <div class="container-fluid fixed z-10 w-full mx-auto h-[14.8%] mb-8 border-1 md:mb-0 shadow">
     <div class="h-full w-full px-4 grid grid-cols-2 bg-white">
       <div class="wrap-header flex items-center justify-between flex-wrap">
         <div class="mr-5 flex justify-between relative mt-2 items-center pb-2">

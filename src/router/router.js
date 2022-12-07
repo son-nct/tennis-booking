@@ -14,8 +14,14 @@ const routes = [
     },
     {
         name : 'search-vendor-page',
-        path : '/vendor/:search',
+        path : '/vendor/search/:search',
         component : () => import('@/pages/customer/SearchPage.vue'),
+        props:true
+    },
+    {
+        name : 'vendor-detail-page',
+        path : '/vendor/:vendorId',
+        component : () => import('@/pages/customer/VendorDetailPage.vue'),
         props:true
     },
 
@@ -23,7 +29,17 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes,
+    scrollBehavior (to, from, savedPosition) {
+        if(savedPosition) {
+            return savedPosition;
+        }else {
+            return {
+                top : 0,
+                left : 0,
+            }
+        }
+    }
 });
 
 
