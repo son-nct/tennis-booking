@@ -1,8 +1,8 @@
 <template>
-    <div class="vendor-item flex items-center bg-white cursor-pointer rounded shadow mb-10 duration-300 ">
+    <div @click="showVendorDetail" class="vendor-item flex items-center bg-white cursor-pointer rounded shadow mb-10 duration-300 ">
         <div class="p-2">
             <img src="https://hoctennis.com.vn/upload/files/baiviet/day_tennis_quan_2trung%2520kien_005%5B1%5D.jpg"
-                class="w-72 h-42 object-contain rounded" alt="ảnh cửa hàng tennis" />
+                class="w-72 h- object-contain rounded" alt="ảnh cửa hàng tennis" />
         </div>
         <div class="pl-4 pt-2 flex flex-col justify-between items-start -mt-2">
             <div class="flex items-center">
@@ -67,6 +67,16 @@ import { Icon } from '@iconify/vue'
 export default {
     components: {
         Icon,
+    },
+    methods : {
+        showVendorDetail() {
+            this.$router.push({
+                name : 'vendor-detail-page',
+                params : {
+                    vendorId : '123'
+                }
+            })
+        }
     }
 }
 </script>

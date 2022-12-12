@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid px-16 bg-[#333] h-96  mx-auto shadow">
+    <div class="container-fluid px-16 bg-[#333] h-96  mx-auto shadow md:pt-4 lg-pt-6">
         <div class="grid grid-cols-8 gap-4 h-full pt-10">
             <div class="col-span-3">
                 <div class="w-full h-72 rounded bg-white p-3">
